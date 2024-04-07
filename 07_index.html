@@ -1,0 +1,26 @@
+<!--COVERT KMS TO ILES USING JAVASCRIPT FUNCTIONS-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <script type="text/javascript">
+            function convert()
+               { 
+                var kms = document.getElementById(`data`).value;
+                const factor = 0.621371;
+                var miles = kms * factor;
+                //document.getElementById(`res`).innerText = miles + ' miles ';
+                document.getElementById(`res`).innerText = miles + ' miles ';
+
+             }
+        </script>
+
+    </head>
+    <body>
+        <input type="number" name="" step="any" id="data" /> kms
+        <button onclick="convert()">Convert</button> miles
+        <h1 id="res"></h1>
+    </body>
+</html>
